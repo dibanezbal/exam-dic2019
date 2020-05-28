@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="img/favicons/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" type="image/png" href="img/favicons/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<title>Tiendas</title>
+</head>
+<body>
+	<header></header>
+	<nav id="navmenu">
+		<label for="show-menu" class="show-menu">&#8801;</label>
+		<input type="checkbox" id="show-menu">
+		<ul id="menu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li class="actual"><a href="tiendas.html">Tiendas</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section class="container-1">
+			<article class="tiendas-info">
+				<div class="tien-text">
+				<h1>Tienda Ntra. Sra. de Valvanera</h1>
+				<p><strong>Dirección:</strong><br>Calle Ntra. Sra de Valvanera 24,<br>50002 Zaragoza</p>
+				<p><strong>Teléfono:</strong> 976 321 40 24</p>
+				</div>
+				<img src="img/tienda1.jpg" alt="Valvanera">	
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.4251965179224!2d-0.8636573491271919!3d41.646554387749546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd591450eaa4cc5d%3A0x1e5a59c3f355b1db!2sCalle%20Ntra.%20Sra.%20de%20Valvanera%2C%2024%2C%2050002%20Zaragoza!5e0!3m2!1ses!2ses!4v1575078571896!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</article>
+			<article class="tiendas-info">
+				<div class="tien-text">
+				<h1>Tienda Violante de Hungría</h1>
+				<p><strong>Dirección:</strong><br>Calle de Violante de Hungría 56,<br>50009 Zaragoza</p>
+				<p><strong>Teléfono:</strong> 976 321 40 56</p>
+				</div>
+				<img src="img/tienda2.jpg" alt="Valvanera">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.636451820453!2d-0.9073783841857037!3d41.641988979241596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914d4b1e3b235%3A0x3ae65de096e8e293!2sCalle%20de%20Violante%20de%20Hungr%C3%ADa%2C%2056%2C%2050009%20Zaragoza!5e0!3m2!1sca!2ses!4v1575313854442!5m2!1sca!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</article>
+			<article class="tiendas-info">
+				<div class="tien-text">
+				<h1>Tienda Alfonso</h1>
+				<p><strong>Dirección:</strong><br>Calle de Alfonso I 32,<br>50003 Zaragoza</p>
+				<p><strong>Teléfono:</strong> 976 321 40 32</p>
+				</div>
+				<img src="img/tienda3.jpg" alt="Valvanera">	
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.0138123499382!2d-0.8817128841853725!3d41.65544357924049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914ecfddf21b7%3A0xf33f056bd974a939!2sCalle%20de%20Alfonso%20I%2C%2032%2C%2050003%20Zaragoza!5e0!3m2!1sca!2ses!4v1575313946916!5m2!1sca!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</article>	
+			<article class="sm">
+				<a target="new" href="https://www.facebook.com/"><img src="img/facebook-logo-button.png" alt="Facebook"></a>
+				<a target="new" href="https://accounts.google.com"><img src="img/google-plus-logo-button.png" alt="Google Plus"></a>
+				<a target="new" href="https://www.google.com/maps/"><img src="img/location-point.png" alt="Google Maps"></a>
+			</article>
+			<article class="form">
+				<form action="form/validacion.php" method="post">
+					<div class="forms">
+						<label for="email">*Email:</label>
+						<input type="email" name="email" id="email" placeholder="ejemplo@dominio.com" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,8})$">
+					</div>
+					<div class="forms">
+						<label for="telefono">Teléfono:</label>
+						<input type="tel" name="telefono" id="telefono" placeholder="99 999999"pattern="^[0-9]{9}$">
+					</div>						
+					<div class="forms">
+						<label for="reason">*Envíanos tus comentarios</label>
+						<textarea name="fuertes" rows="" cols="" required placeholder="Escribe tus comentarios aquí"></textarea>
+					</div>
+					<div class="forms boto">
+						<input type="reset" name="reset" value="Borrar">
+						<input type="submit" name="enviar" id="nombre" value="Enviar" required>
+					</div>
+				</form>
+			</article>
+		</section>
+		</main>
+	<footer>
+		<p>Calle Bomba 16. 50010 Saratoga. Tfno: 666 999 666. Fax: 999 666 999. Email:email@hola.com</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="img/favicons/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" type="image/png" href="img/favicons/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/style2.css">-->
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<title>Inicio</title>
+</head>
+<body>
+	<header></header>
+	<nav id="navmenu">
+		<label for="show-menu" class="show-menu">&#8801;</label>
+		<input type="checkbox" id="show-menu">
+		<ul id="menu">
+			<li class="actual"><a href="index.html">Inicio</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="tiendas.html">Tiendas</a></li>
+			</ul>
+	</nav>
+	<main>
+		<section class="container-1">
+			<article class="ini-text">
+				<h1>Presentación</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sapiente libero sed sint quis. Aut voluptate illum quis expedita necessitatibus cumque aspernatur tenetur eaque perspiciatis! Molestiae quo ipsum nemo, expedita.</p>
+				<h2>Reparto a domicilio</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolore?</p>
+				<h2>Corte tradicional</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</article>
+			<article class="info">
+				<div class="inicio-product">
+					<h3>Calidad</h3>
+					<img src="img/carne.jpg" alt="Carne">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iste facilis aliquid dolores nostrum esse nihil harum, in quam ipsa.</p>
+				</div>
+				<div class="inicio-product">
+					<h3>Servicios 24h</h3>
+					<img src="img/entrega.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iste facilis aliquid dolores nostrum esse nihil harum, in quam ipsa.</p>
+				</div>
+				<div class="inicio-product">
+					<h3>Restauración</h3>
+					<img src="img/restaurantes.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iste facilis aliquid dolores nostrum esse nihil harum, in quam ipsa.</p>
+				</div>
+				<div class="inicio-product">
+					<h3>Charcutería</h3>
+					<img src="img/charcuteria.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iste facilis aliquid dolores nostrum esse nihil harum, in quam ipsa.</p>
+				</div>
+			</article>
+			<article class="sm">
+				<a target="new" href="https://www.facebook.com/"><img src="img/facebook-logo-button.png" alt="Facebook"></a>
+				<a target="new" href="https://accounts.google.com"><img src="img/google-plus-logo-button.png" alt="Google Plus"></a>
+				<a target="new" href="https://www.google.com/maps/"><img src="img/location-point.png" alt="Google Maps"></a>
+			</article>
+			<article class="form">
+				<form action="form/validacion.php" method="post">
+					<div class="forms">
+						<label for="email">*Email:</label>
+						<input type="email" name="email" placeholder="ejemplo@dominio.com"required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+					</div>
+					<div class="forms">
+						<label for="telefono">Teléfono:</label>
+						<input type="tel" name="telefono" id="telefono" placeholder="99 999999" pattern="^[0-9]{9}$">
+					</div>						
+					<div class="forms">
+						<label for="reason">*Envíanos tus comentarios</label>
+						<textarea name="fuertes" rows="" cols="" placeholder="Escribe tus comentarios aquí"></textarea>
+					</div>
+					<div class="forms boto">
+						<input type="reset" name="reset" onclick="alert('¿Quieres borrar todo?')" value="Borrar">
+						<input type="submit" name="enviar" id="form" value="Enviar">
+					</div>
+				</form>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p>Calle Bomba 16. 50010 Saratoga. Tfno: 666 999 666. Fax: 999 666 999. Email:email@hola.com</p>
+	</footer>
+</body>
+</html>
